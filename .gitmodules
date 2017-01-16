@@ -1,3 +1,0 @@
-[submodule "wp-plugins"]
-	path = wp-plugins
-	url = https://github.com/OpenBW/wp-plugins.git
