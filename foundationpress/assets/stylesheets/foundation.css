@@ -6921,8 +6921,11 @@ body#tinymce {
     padding: 2px 0px 0px 0px;
     background-color: #181b22;
     height: 42px; }
-    .replay-control .rv-rc-controls div .rv-rc-play, .replay-control .rv-rc-controls div .rv-rc-pause, .replay-control .rv-rc-controls div .rv-rc-faster, .replay-control .rv-rc-controls div .rv-rc-slower {
-      padding: 0px 0px 8px 0px;
+    .replay-control .rv-rc-controls .volume {
+      position: relative; }
+    .replay-control .rv-rc-controls div .rv-rc-play, .replay-control .rv-rc-controls div .rv-rc-sound, .replay-control .rv-rc-controls div .rv-rc-muted, .replay-control .rv-rc-controls div .rv-rc-pause, .replay-control .rv-rc-controls div .rv-rc-faster, .replay-control .rv-rc-controls div .rv-rc-slower {
+      padding: 0px;
+      margin: 0px;
       display: block;
       height: 36px;
       width: 36px;
@@ -6930,12 +6933,28 @@ body#tinymce {
       -webkit-background-size: contain;
               background-size: contain;
       background-repeat: no-repeat; }
+    .replay-control .rv-rc-controls div .rv-rc-sound {
+      background-image: url("../images/icons/speaker.svg"); }
+    .replay-control .rv-rc-controls div .rv-rc-muted {
+      background-image: url("../images/icons/mute.svg"); }
     .replay-control .rv-rc-controls div .rv-rc-pause {
       background-image: url("../images/icons/pause.svg"); }
     .replay-control .rv-rc-controls div .rv-rc-faster {
       background-image: url("../images/icons/faster.svg"); }
     .replay-control .rv-rc-controls div .rv-rc-slower {
       background-image: url("../images/icons/slower.svg"); }
+
+#volume-slider-wrapper {
+  position: absolute;
+  bottom: 38px;
+  z-index: 1;
+  margin: auto;
+  padding-bottom: 0px;
+  padding-top: 20px;
+  width: 40px; }
+  #volume-slider-wrapper div {
+    position: relative;
+    right: 6px; }
 
 #front-hero {
   background: url("http://www.openbw.com/wp-content/uploads/2016/12/bw_cover2.jpg") bottom center;

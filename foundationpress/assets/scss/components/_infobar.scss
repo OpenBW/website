@@ -161,15 +161,25 @@
 		padding: 2px 0px 0px 0px;
 		background-color: #181b22;
 		height: 42px;
+		.volume {
+			position: relative;
+		}
 		div {
-			.rv-rc-play, .rv-rc-pause, .rv-rc-faster, .rv-rc-slower {
-				padding: 0px 0px 8px 0px;
+			.rv-rc-play, .rv-rc-sound, .rv-rc-muted, .rv-rc-pause, .rv-rc-faster, .rv-rc-slower {
+				padding: 0px;
+				margin: 0px;
 				display: block;
 				height: 36px;
 				width: 36px;
 				background-image: url("../images/icons/play.svg");
 				background-size: contain;
 				background-repeat: no-repeat;
+			}
+			.rv-rc-sound {
+				background-image: url("../images/icons/speaker.svg");
+			}
+			.rv-rc-muted {
+				background-image: url("../images/icons/mute.svg");
 			}
 			.rv-rc-pause {
 				background-image: url("../images/icons/pause.svg");
@@ -181,6 +191,19 @@
 				background-image: url("../images/icons/slower.svg");
 			}
 		}
+	}
+}
+#volume-slider-wrapper {
+	position: absolute;
+	bottom: 38px;
+	z-index: 1;
+	margin: auto;
+	padding-bottom: 0px;
+	padding-top: 20px;
+	width: 40px;
+	div {
+		position: relative;
+		right: 6px;
 	}
 }
 
