@@ -2,11 +2,11 @@ version: '2'
 
 services:
    db:
-     build: ./wpdb_image
-     image: wpdb_image
+     build: ./docker-images/openbw_db
+     image: openbw_db
      volumes:
        - db_data:/var/lib/mysql
-       - ./wpdb_image:/home/dump
+       - ./docker-images/openbw_db:/home/dump
      restart: always
      environment:
        MYSQL_ROOT_PASSWORD: wordpress
@@ -22,10 +22,12 @@ services:
    wordpress:
      depends_on:
        - db
-     image: wordpress:latest
+     build: ./docker-images/openbw_wp
+     image: openbw_wp
      volumes:
        - ./wp-plugins:/var/www/html/wp-content/plugins
        - ./foundationpress:/var/www/html/wp-content/themes/foundationpress
+       - ./bw:/var/www/html/bw
      ports:
        - "8000:80"
      restart: always
