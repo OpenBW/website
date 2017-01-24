@@ -13,4 +13,4 @@ Step 2: cd website
 
 Step 3: docker-compose up -d
 
-Step 4: open http://localhost:8000/?page_id=4 for "live" or http://localhost:8000/?page_id=8 for "staging"
+Step 4: open [local live](http://localhost:8000/?page_id=4) for "live" or [local staging](http://localhost:8000/?page_id=8) for "staging"
