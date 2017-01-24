@@ -7,7 +7,7 @@ Prerequisites:
 
 Perform the following steps from your command line to run the OpenBW replay viewer development environment:
 
-Step 1: git clone https://github.com/OpenBW/website.git
+Step 1: git clone --recursive https://github.com/OpenBW/website.git
 
 Step 2: cd website
 
