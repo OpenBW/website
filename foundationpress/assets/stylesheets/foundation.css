@@ -2560,8 +2560,10 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap; }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; }
   .row .row {
     margin-left: -0.625rem;
     margin-right: -0.625rem; }
@@ -3728,10 +3730,6 @@ textarea {
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: #cacaca; }
-
-input::-moz-placeholder,
-textarea::-moz-placeholder {
   color: #cacaca; }
 
 input:-ms-input-placeholder,
@@ -6910,6 +6908,9 @@ body#tinymce {
     padding: 0px 0px 0px 10px;
     background-color: #181b22;
     height: 40px; }
+    .replay-control .rv-rc-progress-bar div #game-slider {
+      padding: 0px;
+      margin: 15px 0px 0px 0px; }
   .replay-control .rv-rc-timer {
     padding: 0px 0px 0px 0px;
     background-color: #2e2e34;
