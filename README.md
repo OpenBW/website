@@ -1,5 +1,9 @@
 # website
-OpenBW website
+## OpenBW website development environment
+
+Prerequisites:
+* git installed
+* docker-compose installed
 
 Perform the following steps from your command line to run the OpenBW replay viewer development environment:
 
