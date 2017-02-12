@@ -7,3 +7,6 @@ ADD dump.sql /docker-entrypoint-initdb.d
 
 # to enter a running docker container use the following command:
 # docker exec -ti <container name> /bin/bash
+#
+# e.g.:
+# docker exec -ti website_db_1 /bin/bash
