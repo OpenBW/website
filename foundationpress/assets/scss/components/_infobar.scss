@@ -54,7 +54,8 @@
 					display: inline-block;
 					height: 40px;
 					width: 10px;
-					background-color: white;	
+					background-color: white;
+					border-left: 10px solid #2e2e34;
 				}
 				.info_tab_content, .info_tab_content > div {
 					vertical-align:top;
@@ -133,7 +134,7 @@
 		 	height: 100%;
 		 }
 		 .rv_ib_supply { color: #FFFFFF; }
-	  	 .rv_ib_nick { color: #FFFFFF; }
+	  	 .rv_ib_nick { color: #FFFFFF; border-left: 20px solid #2e2e34;}
 	  	 .rv_ib_minerals { color: #54b9b1; }
 	  	 .rv_ib_gas { color: #6ed279; }
 	  	 .rv_ib_worker { color: #e6fb73; }

@@ -6825,7 +6825,8 @@ body#tinymce {
           display: inline-block;
           height: 40px;
           width: 10px;
-          background-color: white; }
+          background-color: white;
+          border-left: 10px solid #2e2e34; }
         .info_tab .tabs-content .tabs-panel div .info_tab_content, .info_tab .tabs-content .tabs-panel div .info_tab_content > div {
           vertical-align: top;
           display: inline-block;
@@ -6889,7 +6890,8 @@ body#tinymce {
     .infobar .infobar-player .rv_ib_supply {
       color: #FFFFFF; }
     .infobar .infobar-player .rv_ib_nick {
-      color: #FFFFFF; }
+      color: #FFFFFF;
+      border-left: 20px solid #2e2e34; }
     .infobar .infobar-player .rv_ib_minerals {
       color: #54b9b1; }
     .infobar .infobar-player .rv_ib_gas {
