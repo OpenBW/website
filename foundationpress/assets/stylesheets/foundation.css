@@ -6800,9 +6800,8 @@ body#tinymce {
   top: 50px;
   left: 60px;
   background-color: rgba(46, 46, 52, 0.3); }
-  .info_tab #info-tabs {
-    border: 1px solid #181b22; }
   .info_tab .tabs {
+    border: 1px solid #181b22;
     background-color: #2e2e34; }
     .info_tab .tabs .tabs-title > a {
       padding: 0.2rem 0.8rem 0.2rem 0.8rem;
